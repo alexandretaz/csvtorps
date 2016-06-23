@@ -27,8 +27,8 @@
 				continue;
 			endif;
 		?>
-			<li><a href="/uploads/<?php echo $item->getFileName();?>">
-				<?php echo $item->getFileName();?>(<?php echo $item->getMTime();?>)
+			<li><a href="/lotFile/<?php echo $item->getFileName();?>">
+				<?php echo $item->getFileName();?>(<?php echo date('d/m/Y H:i:s',$item->getMTime());?>)
 			</a> </li>
 		<?php
 		endforeach;
