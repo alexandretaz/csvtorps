@@ -56,4 +56,6 @@
 	unlink('next_rps');
 	file_put_contents ( "next_rps", $lotFile->getNextNumber() );
 
+	require_once("index.php");
+
 ?>
