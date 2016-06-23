@@ -1,3 +1,10 @@
+<?php
+	require_once("settings.php");
+	require_once("libraries/rps/Rps.php");
+	require_once("libraries/rps/LotFile.php");
+?>
+
+
 <html>
 	<head>
 		<title> Gerador de RPS </title>
