@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Restricted Files"
+# (Following line optional)
+AuthBasicProvider file
+AuthUserFile "<<passwords_file>>"
+# If is a default user
+#Require user rbowen
