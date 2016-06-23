@@ -23,7 +23,7 @@
 		<ul> 
 		<?php
 		foreach ($iterator as $item):
-			if( $item->isDir() ):
+			if( $item->isDir() || strcasecmp($item->getFileName(),'base.md') === 0 ):
 				continue;
 			endif;
 		?>
