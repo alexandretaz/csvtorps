@@ -1,2 +1,4 @@
 settings.php
 lotFile/*.txt
+uploads/*.txt
+.htaccess
