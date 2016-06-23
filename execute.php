@@ -51,6 +51,7 @@
 	}
 
 	file_put_contents( DIR_STORE.'/'.'rps_emitidas_'.$strDateRecord.'.txt', $lotFile->__toString() );
+	chmod (DIR_STORE.'/'.'rps_emitidas_'.$strDateRecord.'.txt', 775);
 
 	unlink('next_rps');
 	file_put_contents ( "next_rps", $lotFile->getNextNumber() );
