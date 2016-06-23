@@ -18,7 +18,7 @@
 		</form>
 		<h1> Lista de Arquivos de Lote Armazenados no Servidor</h1>
 		<?php
-		$iterator = new FilesystemIterator(FOLDER_TO_UPLOAD, FilesystemIterator::SKIP_DOTS );?>
+		$iterator = new FilesystemIterator(DIR_STORE, FilesystemIterator::SKIP_DOTS );?>
 
 		<ul> 
 		<?php
@@ -28,7 +28,7 @@
 			endif;
 		?>
 			<li><a href="/uploads/<?php echo $item->getFileName();?>">
-				<?php $item->getFileName();?>(<?php $item->getMTime();?>)
+				<?php echo $item->getFileName();?>(<?php echo $item->getMTime();?>)
 			</a> </li>
 		<?php
 		endforeach;
