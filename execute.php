@@ -3,7 +3,7 @@
 	require_once("libraries/rps/Rps.php");
 	require_once("libraries/rps/LotFile.php");
 	if(!isset($_FILES['upload_rps']) || empty($_FILES['upload_rps'])) {
-		header('location:index.php')
+		header('location:index.php');
 	}
 	$fileToWork =  FOLDER_TO_UPLOAD.DIRECTORY_SEPARATOR.$_FILES['upload_rps']['name'];
 	$dataInicio  =  new \Datetime();
